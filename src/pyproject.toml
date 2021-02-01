@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastapi-tortoise-aerich-traefik-docker"
+version = "0.1.0"
+description = ""
+authors = ["AntonZN"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.63.0"
+PyJWT = {extras = ["crypto"], version = "^2.0.1"}
+python-dotenv = "^0.15.0"
+fastapi-versioning = "^0.5.0"
+tortoise-orm = "^0.16.20"
+asyncpg = "^0.21.0"
+aerich = "^0.4.4"
+arrow = "^0.17.0"
+passlib = "^1.7.4"
+pydantic = {extras = ["email"], version = "^1.7.3"}
+bcrypt = "^3.2.0"
+
+[tool.poetry.dev-dependencies]
+black = "^20.8b1"
+mypy = "^0.800"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
